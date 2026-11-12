@@ -1,0 +1,9 @@
+node_modules
+dist
+.env
+.env.*
+*.log
+
+# Prints originais em PNG (16 MB). As versões WebP usadas no site ficam em src/assets/projects
+referencias/
+.playwright-mcp/
