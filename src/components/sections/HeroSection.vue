@@ -34,7 +34,7 @@ function playIntro() {
       .fromTo(lineA, { clipPath: 'ellipse(20% 0% at 50% 100%)' }, { clipPath: 'ellipse(100% 140% at 50% 100%)', duration: 1.5 }, 0)
       .from(charsA, { yPercent: 45, duration: 1.5, stagger: { amount: 0.02 * charsA.length, from: 'center' } }, 0)
       .from(charsB, { yPercent: 70, rotationX: -90, autoAlpha: 0, transformOrigin: '50% 100% -20px', duration: 1.1, stagger: 0.06, ease: 'soft' }, 0.45)
-      .from('.portrait img', { yPercent: 18, scale: 1.08, filter: 'blur(14px)', autoAlpha: 0, duration: 1.8, ease: 'soft' }, 0.15)
+      .from('.portrait img', { yPercent: 18, scale: 1.08, autoAlpha: 0, duration: 1.8, ease: 'soft' }, 0.15)
       .from('.hero-meta > *, .role > *', { clipPath: 'inset(0 0 100% 0)', yPercent: 60, duration: 0.9, stagger: 0.07, ease: 'soft' }, 0.8)
       .from('.badge', { scale: 0, rotation: -120, duration: 1.1, ease: 'back.out(1.4)' }, 1)
       .from('.mark', { scale: 0, transformOrigin: 'center', duration: 0.7, stagger: 0.05, ease: 'back.out(2)' }, 0.7)
