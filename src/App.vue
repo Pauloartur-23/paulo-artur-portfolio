@@ -6,6 +6,8 @@ import SiteHeader from '@/components/layout/SiteHeader.vue'
 import HeroSection from '@/components/sections/HeroSection.vue'
 import AboutSection from '@/components/sections/AboutSection.vue'
 import WorkSection from '@/components/sections/WorkSection.vue'
+import StackSection from '@/components/sections/StackSection.vue'
+import JourneySection from '@/components/sections/JourneySection.vue'
 import { gsap, initReveals, initSceneColors, lockScroll, ScrollTrigger, startSmoothScroll } from '@/composables/useMotion'
 
 const ready = ref(false)
@@ -41,5 +43,7 @@ async function onLoaded() {
     <HeroSection :ready="ready" />
     <AboutSection />
     <WorkSection />
+    <StackSection />
+    <JourneySection />
   </main>
 </template>

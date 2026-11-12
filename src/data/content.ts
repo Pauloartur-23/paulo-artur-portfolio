@@ -138,3 +138,63 @@ export const projects: Project[] = [
     ],
   },
 ]
+
+export interface SkillGroup {
+  title: string
+  note: string
+  items: string[]
+}
+
+export const skillGroups: SkillGroup[] = [
+  {
+    title: 'Interface',
+    note: 'O que a pessoa vê e toca.',
+    items: ['Vue.js', 'React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'HTML & CSS', 'GSAP'],
+  },
+  {
+    title: 'Servidor',
+    note: 'O que sustenta tudo por trás.',
+    items: ['Python', 'Django', 'Django REST', 'APIs REST', 'WebSockets', 'PostgreSQL'],
+  },
+  {
+    title: 'Ofício',
+    note: 'Como o trabalho chega ao fim.',
+    items: ['Git & GitHub', 'Vite', 'Docker', 'Vercel & Render', 'Testes', 'Design de UI'],
+  },
+]
+
+export const marqueeWords = ['Vue.js', 'React', 'TypeScript', 'Django', 'Python', 'Tailwind', 'JavaScript', 'Full Stack']
+
+export interface Milestone {
+  tag: string
+  title: string
+  place: string
+  text: string
+}
+
+export const milestones: Milestone[] = [
+  {
+    tag: 'Formação',
+    title: 'Técnico em Informática',
+    place: 'IFC — Instituto Federal Catarinense',
+    text: 'Desenvolvimento Web, Web Mobile, Redes de Computadores e Projeto Integrador. Onde a curiosidade virou profissão.',
+  },
+  {
+    tag: 'Ensino',
+    title: 'Monitor de Informática',
+    place: 'IFC · bolsa de monitoria',
+    text: 'Ajudar colegas a destravar código me ensinou a explicar com clareza, e a escrever código que dispensa explicação.',
+  },
+  {
+    tag: 'Cursos',
+    title: 'Certificações FIAP e Cisco',
+    place: 'Engenharia de Software · Java · Agentes Autônomos · Linux',
+    text: 'Estudo contínuo fora da sala: arquitetura, linguagens novas e IA aplicada.',
+  },
+  {
+    tag: 'Agora',
+    title: 'Ecossistema Urban',
+    place: 'Produtos próprios, do banco ao deploy',
+    text: 'Burgers, Organization, Training, Connect e IA: produtos completos que eu projeto, programo e publico.',
+  },
+]
