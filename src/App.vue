@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { nextTick, onMounted, ref } from 'vue'
 import SitePreloader from '@/components/layout/SitePreloader.vue'
+import SiteHeader from '@/components/layout/SiteHeader.vue'
 import { gsap, initReveals, initSceneColors, lockScroll, ScrollTrigger, startSmoothScroll } from '@/composables/useMotion'
 
 const ready = ref(false)
@@ -30,6 +31,7 @@ async function onLoaded() {
   <SitePreloader @done="onLoaded" />
   <div ref="progress" class="progress-bar" aria-hidden="true" />
   <div class="grain" aria-hidden="true" />
+  <SiteHeader />
   <main id="conteudo">
   </main>
 </template>
