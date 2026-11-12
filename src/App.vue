@@ -8,6 +8,7 @@ import AboutSection from '@/components/sections/AboutSection.vue'
 import WorkSection from '@/components/sections/WorkSection.vue'
 import StackSection from '@/components/sections/StackSection.vue'
 import JourneySection from '@/components/sections/JourneySection.vue'
+import ContactSection from '@/components/sections/ContactSection.vue'
 import { gsap, initReveals, initSceneColors, lockScroll, ScrollTrigger, startSmoothScroll } from '@/composables/useMotion'
 
 const ready = ref(false)
@@ -46,4 +47,5 @@ async function onLoaded() {
     <StackSection />
     <JourneySection />
   </main>
+  <ContactSection />
 </template>
