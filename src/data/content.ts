@@ -138,3 +138,29 @@ export const projects: Project[] = [
     ],
   },
 ]
+
+export interface SkillGroup {
+  title: string
+  note: string
+  items: string[]
+}
+
+export const skillGroups: SkillGroup[] = [
+  {
+    title: 'Interface',
+    note: 'O que a pessoa vê e toca.',
+    items: ['Vue.js', 'React', 'TypeScript', 'JavaScript', 'Tailwind CSS', 'HTML & CSS', 'GSAP'],
+  },
+  {
+    title: 'Servidor',
+    note: 'O que sustenta tudo por trás.',
+    items: ['Python', 'Django', 'Django REST', 'APIs REST', 'WebSockets', 'PostgreSQL'],
+  },
+  {
+    title: 'Ofício',
+    note: 'Como o trabalho chega ao fim.',
+    items: ['Git & GitHub', 'Vite', 'Docker', 'Vercel & Render', 'Testes', 'Design de UI'],
+  },
+]
+
+export const marqueeWords = ['Vue.js', 'React', 'TypeScript', 'Django', 'Python', 'Tailwind', 'JavaScript', 'Full Stack']
